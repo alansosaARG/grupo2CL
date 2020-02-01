@@ -10,7 +10,16 @@
    
 </head>
 <body>
-    <script src="./src/js/index.js"></script>
+  <!-- Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>   
+<!-- Bootstrap.datepicker -->
+<script src="./src/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="./src/css/bootstrap-datepicker.min.css">
+<!-- Anexos -->
+<script src="./src/js/index.js"></script>
+
     <h1>Bienvenido</h1>
 <p>Gracias por tu interés en nuestros Servicios de Salud.<br>
     Por favor, cargá los siguientes datos para poder usar nuestras prestaciones</p>
@@ -33,25 +42,39 @@
           <label for="documentoDNI">Documento</label>
           <input type="text" class="form-control" id="documentoDNI" placeholder="Apartment, studio, or floor">
         </div>
+
+        <p>Date: <input type="text" id="datepicker"></p>
+        
         <div class="form-group">
-          <label for="nacimientoPaciente">Fecha de Nacimiento</label>
+          <label for="sexoPaciente">Sexo</label>
+          <input type="text" class="form-control" id="sexoPaciente" placeholder="Sexo">
+        </div>
+        <div class="form-group">
+          <label for="nacimientoPaciente">Domicilio</label>
           <input type="text" class="form-control" id="nacimientoPaciente" placeholder="Apartment, studio, or floor">
         </div>
-
+        <div class="form-group">
+          <label for="telefonoCliente">Teléfono</label>
+          <input type="text" class="form-control" id="telefonoCliente" placeholder="(381 *********)">
+        </div>
+        <div class="form-group">
+          <label for="emailPaciente">Correo Electrónico</label>
+          <input type="text" class="form-control" id="emailPaciente" placeholder="example@mail.com">
+        </div>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="localidadPaciente">Localidad</label>
             <input type="text" class="form-control" id="localidadPaciente">
           </div>
           <div class="form-group col-md-4">
-            <label for="inputState">State</label>
+            <label for="inputState">Provincia</label>
             <select id="inputState" class="form-control">
               <option selected>Choose...</option>
               <option>...</option>
             </select>
           </div>
           <div class="form-group col-md-2">
-            <label for="inputZip">Zip</label>
+            <label for="inputZip">Código Postal</label>
             <input type="text" class="form-control" id="inputZip">
           </div>
         </div>
@@ -59,19 +82,21 @@
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="gridCheck">
             <label class="form-check-label" for="gridCheck">
-              Check me out
+              Acepto Términos y Condiciones
             </label>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary">Sign in</button>
+        <button type="submit" class="btn btn-primary confirmarBoton">Confirmar</button>
+        <button type="submit" class="btn btn-primary confirmarBotonProblema">Tengo problemas para registrarme</button>
+
+        <p>"SEGÚN EL ART 1 DISPOSICIÓN 4/2009, SE TRANSCRIBE: ART. 27 INC 3 LEY 25326: EL TITULAR PODRÁ EN CUALQUIER MOMENTO SOLICITAR EL RETIRO O BLOQUEO DE SU NOMBRE DE LOS BANCOS DE DATOS A LOS QUE SE REFIERE EL PRESENTE ARTÍCULO. Y ART. 27 ANEXO I DECRETO 1558/01: EN TODA COMUNICACIÓN CON FINES DE PUBLICIDAD QUE SE REALICE POR CORREO, TELÉFONO, CORREO ELECTRÓNICO, INTERNET U OTRO MEDIO A DISTANCIA A CONOCER, SE DEBERÁ INDICAR, EN FORMA EXPRESA Y DESTACADA, LA POSIBILIDAD DEL TITULAR DEL DATO DE SOLICITAR EL RETIRO O BLOQUEO, TOTAL O PARCIAL, DE SU NOMBRE DE LA BASE DE DATOS. A PEDIDO DEL INTERESADO, SE DEBERÁ INFORMAR EL NOMBRE DEL RESPONSABLE O USUARIO DEL BANCO DE DATOS QUE PROVEYÓ LA INFORMACIÓN."
+        </p>
+
       </form>
 
 
 
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>   
-<script src="js.js"></script>
+
 </body>
 </html>

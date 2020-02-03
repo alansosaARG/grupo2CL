@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./src/css/index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-   
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab:700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Bootstrap -->
@@ -19,9 +19,12 @@
 <link rel="stylesheet" href="./src/css/bootstrap-datepicker.min.css">
 <!-- Anexos -->
 <script src="./src/js/index.js"></script>
-
-    <h1>Bienvenido</h1>
-<p>Gracias por tu interés en nuestros Servicios de Salud.<br>
+<!-- contenido -->
+<img src="./assets/img/LogoRolling.svg" class= "rounded mx-auto d-block m-4" alt="Logo RollingCode" height="91px">
+<h1 class="tituloSeccion text-center">Registro del Paciente</h1>
+<div class="formularioRegistroCliente">
+<h2 class="tituloContenido text-center">Bienvenido</h2>
+<p class="textoContenido text-center">Gracias por tu interés en nuestros Servicios de Salud.<br>
     Por favor, cargá los siguientes datos para poder usar nuestras prestaciones</p>
     <form>
         <div class="form-row">
@@ -35,39 +38,48 @@
           </div>
           <div class="form-group col-md-4">
             <label for="edadPaciente">Edad</label>
-            <input type="text" class="form-control" id="edadPaciente" placeholder="1234 Main St">
+            <input type="text" class="form-control" id="edadPaciente" placeholder="">
           </div>
         </div>
-        <div class="form-group d-flex justify-content-around fill">
-          <label for="documentoDNI">Documento</label>
-          <input type="text" class="form-control" id="documentoDNI" placeholder="Apartment, studio, or floor">
-          <p class="col-md-4">Date: <input type="text" id="datepicker"></p>
-          <div class="idSexoCliente col-md-4">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Sexo </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">Femenino</button>
-              <button class="dropdown-item" type="button">Masculino</button>
-              <button class="dropdown-item" type="button">Prefiero no decirlo</button>
+        <!-- division 2 -->
+        <div class="form-row d-flex mb-3">
+          <div class="form-group col-md-4">
+            <label for="documentoDNI">Documento</label>
+            <input type="text" class="form-control" id="documentoDNI" placeholder="">
+          </div>          
+          <div class="input-group d-flex flex-column col-md-4 mb-3">
+            <label for="documentoDNI">Fecha de Nacimiento</label>
+            <input type="text" class="form-control datePickerControl" id="datepicker" aria-describedby="inputGroup-sizing-default">
+          </div>                 
+          <div class="idSexoCliente d-flex col-md-4">
+            <div class="form-group">
+              <label for="idSexoCliente">Seleccione Sexo</label>
+              <select class="form-control" id="idSexoCliente">
+                <option>Masculino</option>
+                <option>Femenino</option>
+                <option>Prefiero no Decirlo</option>
+              </select>
             </div>
-          </div>
+          </div>          
         </div>
+        <!-- fin division 2 -->
+        <!-- Inicio Division 3 -->
         <div class="form-row d-flex justify-content-around fill">
             <div class="form-group col-md-4">
-                <label for="nacimientoPaciente">Domicilio</label>
-                <input type="text" class="form-control" id="nacimientoPaciente" placeholder="Apartment, studio, or floor">
+                <label for="domicilioPaciente">Domicilio</label>
+                <input type="text" class="form-control" id="domicilioPaciente" placeholder="Calle 123">
               </div>
             <div class="form-group col-md-4">
                 <label for="telefonoCliente" >Teléfono</label>
                 <input type="text" class="form-control" id="telefonoCliente" placeholder="(381 *********)">
                     <div class="opcionClientes">
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                        <label class="form-check-label" for="exampleRadios1"> Fijo </label>
+                        <input class="form-check-input" type="radio" name="opcionTelFijo" id="opcionTelFijo" value="option1" checked>
+                        <label class="form-check-label" for="opcionTelFijo"> Fijo </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                        <label class="form-check-label" for="exampleRadios2"> Celular </label>
+                        <input class="form-check-input" type="radio" name="opcionTelCel" id="opcionTelCel" value="option2">
+                        <label class="form-check-label" for="opcionTelCel"> Celular </label>
                       </div>
                     </div>
         </div>
@@ -84,8 +96,30 @@
           <div class="form-group col-md-4">
             <label for="inputState">Provincia</label>
             <select id="inputState" class="form-control">
-              <option selected>Choose...</option>
-              <option>...</option>
+              <option selected>Seleccione</option>
+              <option>Buenos Aries</option>
+              <option>Catamarca</option>
+              <option>Chaco</option>
+              <option>Chubut</option>
+              <option>Córdoba</option>
+              <option>Corrientes</option>
+              <option>Entre Ríos</option>
+              <option>Formosa</option>
+              <option>Jujuy</option>
+              <option>La Pampa</option>
+              <option>La Rioja</option>
+              <option>Mendoza</option>
+              <option>Misiones</option>
+              <option>Neuquén</option>
+              <option>Río Negro</option>
+              <option>Salta</option>
+              <option>San Juan</option>
+              <option>San Luis</option>
+              <option>Santa Cruz</option>
+              <option>Santa Fe</option>
+              <option>Santiago del Estero</option>
+              <option>Tierra del Fuego</option>
+              <option>Tucumán</option>
             </select>
           </div>
           <div class="form-group col-md-2">
@@ -93,7 +127,7 @@
             <input type="text" class="form-control" id="inputZip">
           </div>
         </div>
-
+<!-- Fin división 3 -->
         <div class="form-group d-flex flex-column align-items-center mt-3 mb-5">
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="gridCheck">
@@ -101,19 +135,12 @@
               Acepto Términos y Condiciones
             </label>
           </div>
-          <button type="submit" class="btn btn-primary btn-lg mb-3 confirmarBoton ">Confirmar</button>
+          <button type="submit" class="btn btn-primary btn-lg mb-3 confirmarBoton">Confirmar</button>
           <button type="submit" class="btn btn-secondary btn-sm mb-3 confirmarBotonProblema">Tengo problemas para registrarme</button>
           </div>
-       
-
-        <p>"SEGÚN EL ART 1 DISPOSICIÓN 4/2009, SE TRANSCRIBE: ART. 27 INC 3 LEY 25326: EL TITULAR PODRÁ EN CUALQUIER MOMENTO SOLICITAR EL RETIRO O BLOQUEO DE SU NOMBRE DE LOS BANCOS DE DATOS A LOS QUE SE REFIERE EL PRESENTE ARTÍCULO. Y ART. 27 ANEXO I DECRETO 1558/01: EN TODA COMUNICACIÓN CON FINES DE PUBLICIDAD QUE SE REALICE POR CORREO, TELÉFONO, CORREO ELECTRÓNICO, INTERNET U OTRO MEDIO A DISTANCIA A CONOCER, SE DEBERÁ INDICAR, EN FORMA EXPRESA Y DESTACADA, LA POSIBILIDAD DEL TITULAR DEL DATO DE SOLICITAR EL RETIRO O BLOQUEO, TOTAL O PARCIAL, DE SU NOMBRE DE LA BASE DE DATOS. A PEDIDO DEL INTERESADO, SE DEBERÁ INFORMAR EL NOMBRE DEL RESPONSABLE O USUARIO DEL BANCO DE DATOS QUE PROVEYÓ LA INFORMACIÓN."
+        <p class="terminosCondiciones">"SEGÚN EL ART 1 DISPOSICIÓN 4/2009, SE TRANSCRIBE: ART. 27 INC 3 LEY 25326: EL TITULAR PODRÁ EN CUALQUIER MOMENTO SOLICITAR EL RETIRO O BLOQUEO DE SU NOMBRE DE LOS BANCOS DE DATOS A LOS QUE SE REFIERE EL PRESENTE ARTÍCULO. Y ART. 27 ANEXO I DECRETO 1558/01: EN TODA COMUNICACIÓN CON FINES DE PUBLICIDAD QUE SE REALICE POR CORREO, TELÉFONO, CORREO ELECTRÓNICO, INTERNET U OTRO MEDIO A DISTANCIA A CONOCER, SE DEBERÁ INDICAR, EN FORMA EXPRESA Y DESTACADA, LA POSIBILIDAD DEL TITULAR DEL DATO DE SOLICITAR EL RETIRO O BLOQUEO, TOTAL O PARCIAL, DE SU NOMBRE DE LA BASE DE DATOS. A PEDIDO DEL INTERESADO, SE DEBERÁ INFORMAR EL NOMBRE DEL RESPONSABLE O USUARIO DEL BANCO DE DATOS QUE PROVEYÓ LA INFORMACIÓN."
         </p>
-
       </form>
-
-
-
-
-
+    </div>
 </body>
 </html>

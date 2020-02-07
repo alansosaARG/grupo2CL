@@ -1,0 +1,24 @@
+{
+  "name": "clinica",
+  "version": "1.0.0",
+  "description": "clinica",
+  "main": "index.js",
+  "dependencies": {
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alansosaARG/grupo2CL.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alansosaARG/grupo2CL/issues"
+  },
+  "homepage": "https://github.com/alansosaARG/grupo2CL#readme"
+}

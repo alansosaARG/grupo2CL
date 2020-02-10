@@ -12,13 +12,7 @@ h1{
     font-family: 'Roboto Slab', serif;
 
 }
-h2{
-    font-family:'Montserrat', sans-serif;
-}
-p{
-    font-family:'Montserrat', sans-serif;
-}
-label{
+h2, li, p, label{
     font-family:'Montserrat', sans-serif;
 }
 .btn{
@@ -32,3 +26,31 @@ label{
     font-family: 'Montserrat', sans serif;
     font-size: 10pt;
 }
+.header-img {
+    height: 50vh;
+    width: 100%;
+    background-image: url('../../assets/img/clinic.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parrafoTitulo {
+    position: absolute;
+    font-size: 25px;
+    margin: 4em;
+    background-color: #691353;
+    font-family: 'Roboto Slab', serif;
+    font-size: 24pt;
+}
+.btn-outline-dark:hover{
+    background-color:#691353 !important;
+}
+
+.card, .home {
+    background: rgba(128, 128, 128, 0.055) !important;
+}
+
+.btnTurnos {
+    font-family: 'Roboto Slab', serif;
+    }

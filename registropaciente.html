@@ -17,8 +17,7 @@
 <!-- Bootstrap.datepicker -->
 <script src="./src/js/bootstrap-datepicker.min.js"></script>
 <link rel="stylesheet" href="./src/css/bootstrap-datepicker.min.css">
-<!-- Anexos -->
-<script src="./src/js/index.js"></script>
+
 <!-- contenido -->
 <img src="./assets/img/LogoRolling.svg" class= "rounded mx-auto d-block m-4" alt="Logo RollingCode" height="91px">
 <h1 class="tituloSeccion text-center">Registro del Paciente</h1>
@@ -26,38 +25,38 @@
 <h2 class="tituloContenido text-center">Bienvenido</h2>
 <p class="textoContenido text-center">Gracias por tu interés en nuestros Servicios de Salud.<br>
     Por favor, cargá los siguientes datos para poder usar nuestras prestaciones</p>
-    <form>
+    <form id="formPaciente">
         <div class="form-row">
           <div class="form-group col-md-4">
             <!-- <label for="apellidoPaciente">Apellido</label> -->
-            <input placeholder="Apellido" type="email" class="form-control" id="apellidoPaciente">
+            <input placeholder="Apellido" type="text" class="form-control" id="apellidoPaciente">
           </div>
           <div class="form-group col-md-4">
-            <label for="nombrePaciente">Nombre</label>
-            <input type="password" class="form-control" id="nombrePaciente">
+            <!-- <label for="nombrePaciente">Nombre</label> -->
+            <input placeholder="Nombre" type="text" class="form-control" id="nombrePaciente">
           </div>
           <div class="form-group col-md-4">
-            <label for="edadPaciente">Edad</label>
-            <input type="text" class="form-control" id="edadPaciente" placeholder="">
+            <!-- <label for="edadPaciente">Edad</label> -->
+            <input placeholder="Edad" type="number" class="form-control" id="edadPaciente" >
           </div>
         </div>
         <!-- division 2 -->
         <div class="form-row d-flex mb-3">
           <div class="form-group col-md-4">
-            <label for="documentoDNI">Documento</label>
-            <input type="text" class="form-control" id="documentoDNI" placeholder="">
+            <!-- <label for="documentoDNI">Documento</label> -->
+            <input placeholder="Documento" type="number" class="form-control" id="documentoDNI">
           </div>          
           <div class="input-group d-flex flex-column col-md-4 mb-3">
-            <label for="documentoDNI">Fecha de Nacimiento</label>
-            <input type="text" class="form-control datePickerControl" id="datepicker" aria-describedby="inputGroup-sizing-default">
+            <!-- <label for="documentoDNI">Fecha de Nacimiento</label> -->
+            <input placeholder="Fecha de Nacimiento" type="date" class="form-control" id="nacimientoPaciente" aria-describedby="inputGroup-sizing-default">
           </div>                 
           <div class="idSexoCliente d-flex col-md-4">
             <div class="form-group">
-              <label for="idSexoCliente">Seleccione Sexo</label>
+              <!-- <label for="idSexoCliente">Seleccione Sexo</label> -->
               <select class="form-control" id="idSexoCliente">
-                <option>Masculino</option>
-                <option>Femenino</option>
-                <option>Prefiero no Decirlo</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value= "Prefiero no Decirlo">Prefiero no Decirlo</option>
               </select>
             </div>
           </div>          
@@ -66,37 +65,37 @@
         <!-- Inicio Division 3 -->
         <div class="form-row d-flex justify-content-around fill">
             <div class="form-group col-md-4">
-                <label for="domicilioPaciente">Domicilio</label>
-                <input type="text" class="form-control" id="domicilioPaciente" placeholder="Calle 123">
+                <!-- <label for="domicilioPaciente">Domicilio</label> -->
+                <input placeholder="Domicilio "type="text" class="form-control" id="domicilioPaciente">
               </div>
             <div class="form-group col-md-4">
-                <label for="telefonoCliente" >Teléfono</label>
-                <input type="text" class="form-control" id="telefonoCliente" placeholder="(381 *********)">
-                    <div class="opcionClientes">
+                <!-- <label for="telefonoCliente" >Teléfono</label> -->
+                <input placeholder="Teléfono" type="text" class="form-control" id="telefonoCliente">
+                    <div class="opcionClientes form-check">
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="opcionTelFijo" id="opcionTelFijo" value="option1" checked>
-                        <label class="form-check-label" for="opcionTelFijo"> Fijo </label>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineFijo" value="Fijo">
+                        <label class="form-check-label" for="inlineFijo">Fijo</label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="opcionTelCel" id="opcionTelCel" value="option2">
-                        <label class="form-check-label" for="opcionTelCel"> Celular </label>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineCelular" value="Celular">
+                        <label class="form-check-label" for="inlineCelular">Celular</label>
                       </div>
                     </div>
         </div>
             <div class="form-group col-md-4">
-              <label for="emailPaciente">Correo Electrónico</label>
-              <input type="text" class="form-control" id="emailPaciente" placeholder="example@mail.com">
+              <!-- <label for="emailPaciente">Correo Electrónico</label> -->
+              <input placeholder="Correo Electrónico"type="email" class="form-control" id="emailPaciente">
             </div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
-            <label for="localidadPaciente">Localidad</label>
-            <input type="text" class="form-control" id="localidadPaciente">
+            <!-- <label for="localidadPaciente">Localidad</label> -->
+            <input placeholder="Localidad "type="text" class="form-control" id="localidadPaciente">
           </div>
           <div class="form-group col-md-4">
-            <label for="inputState">Provincia</label>
-            <select id="inputState" class="form-control">
-              <option selected>Seleccione</option>
+            <!-- <label for="inputState">Provincia</label> -->
+            <select placeholder="Provincia" id="seleccionProvincia" class="form-control">
+              <option >Seleccione</option>
               <option>Buenos Aries</option>
               <option>Catamarca</option>
               <option>Chaco</option>
@@ -123,15 +122,15 @@
             </select>
           </div>
           <div class="form-group col-md-2">
-            <label for="inputZip">Código Postal</label>
-            <input type="text" class="form-control" id="inputZip">
+            <!-- <label for="inputZip">Código Postal</label> -->
+            <input placeholder="Código Postal" type="text" class="form-control" id="postalCliente">
           </div>
         </div>
 <!-- Fin división 3 -->
         <div class="form-group d-flex flex-column align-items-center mt-3 mb-5">
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label mb-3" for="gridCheck">
+            <input class="form-check-input" type="checkbox" id="aceptoTyC">
+            <label class="form-check-label mb-3" for="aceptoTyC">
               Acepto Términos y Condiciones
             </label>
           </div>
@@ -142,5 +141,32 @@
         </p>
       </form>
     </div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAdhag8TvPCAakcPCm_5_a384eAu825760",
+    authDomain: "grupo-2-cl.firebaseapp.com",
+    databaseURL: "https://grupo-2-cl.firebaseio.com",
+    projectId: "grupo-2-cl",
+    storageBucket: "grupo-2-cl.appspot.com",
+    messagingSenderId: "867224840699",
+    appId: "1:867224840699:web:1323988005d72fbdf2c35e",
+    measurementId: "G-92W7BK1VFB"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  
+</script>
+<!-- Anexos -->
+<script src="./src/js/index.js"></script>
 </body>
-</html>
+</html> -->

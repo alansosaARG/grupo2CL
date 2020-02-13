@@ -29,16 +29,16 @@
     </div>
     <div class="container py-5 bg-Copia-de-Health-Care-3-hex">
         <div class="row">
-            <div class="col-6 text-center h1">Especialidad</div>
-            <div class="col-6 pt-3">
+            <div class="col-sm-6 text-center h1">Especialidad</div>
+            <div class="col-sm-6 pt-3">
                 <div class="form-group">
                     <label for="exampleFormControlSelect1"></label>
                     <select class="form-control" id="exampleFormControlSelect1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                        <option>GINECOLOGIA</option>
+                        <option>PEDIATRIA</option>
+                        <option>TRAUMATOLOGIA</option>
+                        <option>CARDIOLOGIA</option>
+                        <option>DERMATOLOGIA</option>
                     </select>
                 </div>
             </div>
@@ -46,16 +46,16 @@
     </div>
     <div class="container py-5">
         <div class="row">
-            <div class="col-6 text-center h1">Profecional</div>
-            <div class="col-6 pt-3">
+            <div class="col-sm-6 text-center h1">Profecional</div>
+            <div class="col-sm-6 pt-3">
                 <div class="form-group">
                     <label for="exampleFormControlSelect1"></label>
                     <select class="form-control" id="exampleFormControlSelect1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                        <option>ABRAHAN MARIA BELEN</option>
+                        <option>ANZORENA ANDRES</option>
+                        <option>DEPETRIS SILVANA RITA</option>
+                        <option>LORENZO SILIVIA LOURDES</option>
+                        <option>CARABAJAL JOL</option>
                     </select>
                 </div>
             </div>
@@ -63,33 +63,54 @@
     </div>
     <div class="container py-5 bg-Copia-de-Health-Care-3-hex">
         <div class="row">
-            <div class="col-6 text-center h1">Turnos disponibles</div>
-            <div class="col-6 pt-3">
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1"></label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
+            <div class="col-sm-6 text-center h1">Turnos disponibles</div>
+            <div class="col-sm-6 pt-3">
+                <form>
+                    
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1" class="h5">DIA</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>LUNES</option>
+                            <option>MARTES</option>
+                            <option>MIERCOLES</option>
+                            <option>JUEVES</option>
+                            <option>VIERNES</option>
+                        </select>
+                    </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlSelect1" class="h5">HORA</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>9:00 a 10:00</option>
+                            <option>10:00 a 11:00</option>
+                            <option>11:00 a 12:00</option>
+                            <option>12:00 a 13:00</option>
+                            <option>13:00 a 14:00</option>
+                        </select>
+                    </div>
+                      
+                   
+                  </form>
+                  
             </div>
         </div>
     </div>
     <div class="container py-5">
         <div class="row">
-            <div class=" text-center ml-5 h1">Describa el motivo de su consulta</div>
+            <div class=" text-center h1">Describa el motivo de su consulta</div>
         </div>
         <div class="row pt-3">
-            <div class="col-3"></div>
-            <div class="col-6">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-
+            <div class="col-2"></div>
+            <div class="col-8">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Describa brevemente el motivo de su consulta..."></textarea>
             </div>
-            <div class="col-3"></div>
+            <div class="col-2"></div>
         </div>
+        <div class="container p-5 btn">
+            <button type="button" class="btn btn-primary font-weight-bold">confirmar turno
+
+            </button>
+        </div>
+        
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">

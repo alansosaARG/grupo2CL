@@ -1,6 +1,4 @@
 /node_modules
-<<<<<<< HEAD
-=======
 /test/js
 /test/browsertest/js
 /test/fixtures/temp-*
@@ -16,5 +14,4 @@
 .vscode
 .cache
 .eslintcache
->>>>>>> 1fffbf998b8871495d832760b2542fb489120c83
 package-lock.json

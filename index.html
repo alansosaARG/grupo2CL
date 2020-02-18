@@ -10,10 +10,112 @@
     <title>Clínica RollingCode</title>
 </head>
 <body>
-        <!-- Button trigger modal -->
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header loginheader text-white d-flex flex-column align-items-center flex-grow-1">
+            <h1 class="tituloSesion">Iniciar Sesión</h1>
+            <img class="user" src="./assets/userwhite.svg" alt="user">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img class="iconcheck" src="./assets/removeWhite.svg" alt="not">
+          </button>
+        </div>
+        <div class="">
+            <h2 class="d-flex justify-content-center">Tipo de Usuario</h2>
+            <div class=" d-flex justify-content-around">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Paciente</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profesional</a>
+                    </li>                    
+                  </ul>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                    aria-labelledby="pills-home-tab">
+                    <form>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Tipo y Nro de Documento</label>
+                            <div class="dropdown open d-flex">
+                                <button class="btn btn-secondary dropdown-toggle" type="button"
+                                    id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Tipo
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#!">DNI</a>
+                                    <a class="dropdown-item" href="#!">CI</a>
+                                    <a class="dropdown-item" href="#!">LE</a>
+                                    <a class="dropdown-item" href="#!">LC</a>
+                                    <a class="dropdown-item" href="#!">Pas</a>
+                                </div>
+                                <input type="number" class="form-control" id="formGroupExampleInput"
+                                    placeholder="Nro de Documento">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Contraseña</label>
+                            <input type="password" class="form-control" id="formGroupExampleInput2"
+                                placeholder="Ingrese Contraseña">
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                    aria-labelledby="pills-profile-tab">
+                    <form>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Nro de CUIT</label>
+                            <div class="dropdown open d-flex">
+                                <input type="number" class="form-control" id="formGroupExampleInput"
+                                    placeholder="Nro de Cuit">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Contraseña</label>
+                            <input type="password" class="form-control" id="formGroupExampleInput2"
+                                placeholder="Ingrese Contraseña">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <button type="submit" class="btn text-white mb-3 d-flex justify-content-center">Ingresar</button>
+        </div>                        
+<div class="card-footer text-muted d-flex flex-column align-items-center ">          
+<div>
+    <img class="flecha" src="./assets/right-chevron.svg" alt="flecha">
+    <a id="btnrecover" onclick="hideModalRecover()">Olvidé mi contraseña</a>
+
+</div>
+<div>
+    <img class="flecha" src="./assets/right-chevron.svg" alt="flecha">
+    <a href="http://">Registrarme</a>
+</div>
+<div>
+    <img class="flecha" src="./assets/right-chevron.svg" alt="flecha">
+    <a href="http://">Ver Politica de Privacidad</a>
+</div>
+</div>
+</div> 
+     
+       
+       
+      </div>
+    </div>
+  </div>
+        <!-- Button trigger modal
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> Launch demo modal
         </button>
-        <!-- Modal -->
+       Modal 
         <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog loginheader" role="document">
@@ -38,7 +140,7 @@
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox" class="custom-control-input" id="customCheck1">
                                                 <label class="custom-control-label" for="customCheck1">Paciente</label>
-                                              </div>
+                                            </div>
                                         </a>
                                     </li>
                                     <li class="nav-item">
@@ -47,7 +149,7 @@
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox" class="custom-control-input" id="customCheck1">
                                                 <label class="custom-control-label" for="customCheck1">Profesional</label>
-                                              </div>
+                                            </div>
                                         </a>
                                     </li>
                                 </ul>
@@ -108,7 +210,7 @@
                 <div>
                     <img class="flecha" src="./assets/right-chevron.svg" alt="flecha">
                     <a id="btnrecover" onclick="hideModalRecover()">Olvidé mi contraseña</a>
-                   
+                
                 </div>
                 <div>
                     <img class="flecha" src="./assets/right-chevron.svg" alt="flecha">
@@ -119,13 +221,13 @@
                     <a href="http://">Ver Politica de Privacidad</a>
                 </div>
             </div>
-          </div> 
-          <!-- Modalrecover -->
+        </div> 
+         Modalrecover
     <div class="modal fade" id="modalrecover" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
+        <div class="modal-content">
             <div class="modal-body">
-              <div class="card text-center">
+            <div class="card text-center">
                 <div class="card-header loginheader text-white d-flex">
                     <div class="d-flex flex-column align-items-center flex-grow-1">
                     <h1 class="tituloSesion">Olvidé mi Contraseña</h1>            
@@ -137,44 +239,44 @@
                     <div class=" col justify-content-">
                         <h2 class="card-title">Tipo de Usuario</h2>
                         <h2>Paciente</h2>
-                      </div>              
-                 </div>
+                    </div>              
                 </div>
-                 <div class="card-body">
-                     <p>Ingrese su numero de documento para recibir en su correo electronico los pasos a seguir para restablecer su contraseña.</p>
+                </div>
+                <div class="card-body">
+                    <p>Ingrese su numero de documento para recibir en su correo electronico los pasos a seguir para restablecer su contraseña.</p>
                     <form>
                         <div class="form-group">
                             <label for="formGroupExampleInput">Tipo y Nro de Documento</label>
                             <div class="dropdown open d-flex">
-                              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Tipo
-                              </button>
-                              <div class="dropdown-menu">                      
+                            </button>
+                            <div class="dropdown-menu">                      
                                 <a class="dropdown-item" href="#!">DNI</a>
                                 <a class="dropdown-item" href="#!">CI</a>
                                 <a class="dropdown-item" href="#!">LE</a>
                                 <a class="dropdown-item" href="#!">LC</a>
                                 <a class="dropdown-item" href="#!">Pas</a>
-                              </div>
-                              <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Nro de Documento">
+                            </div>
+                            <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Nro de Documento">
                             </div>              
-                          </div>                     
-                      </form>              
-                 </div>        
+                        </div>                     
+                    </form>              
+                </div>        
                 <div class="card-footer text-muted">          
                     <button type="submit" class="btn btn-primary mb-3">Recuperar</button>
                     <div>
                         <img class="flecha" src="./assets/right-chevron.svg" alt="flecha">
                         <a href="http://">Olvidé mi correo electronico</a>
                     </div>
-                   
+                
                 </div>
-              </div>
             </div>
-           
-          </div>
+            </div>
+        
         </div>
-      </div>    
+        </div>
+    </div>     -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>

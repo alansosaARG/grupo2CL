@@ -39,3 +39,6 @@ a{
 .puntocolor {
     color: #225378;
 }
+a.active{ 
+ background-color: #225378!Important;
+}

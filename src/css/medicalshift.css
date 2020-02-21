@@ -56,25 +56,3 @@ label {
 .btn {
     font-family: 'Montserrat', sans-serif;
 }
-
-
-.form-control{
-    background-color: #d3d3d3 !important;
-    font-family:'Montserrat', sans-serif;
-    color: black;       
-    }.form-control::-webkit-input-placeholder {
-        background-color: #d3d3d3;
-        border-radius: 11px;
-        color: black !important;
-    }
-    .form-control::-moz-placeholder {
-        background-color: #d3d3d3;
-        border-radius: 11px;
-        color: black !important;
-    }::-webkit-input-placeholder {
-        font-family:'Montserrat', sans-serif;
-    }
-    ::-moz-placeholder {
-        background-color: #d3d3d3;
-        font-family:'Montserrat', sans-serif;
-    }

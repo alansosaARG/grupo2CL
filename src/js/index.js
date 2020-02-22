@@ -4,6 +4,14 @@ function hideModalRecover() {
 }
 function hideModalpp() {
     $('#ppmodal').modal("hide");
-    // $('#modalrecover').modal("show");
+    
     
 }
+function recoverPass() {
+    Swal.fire({
+    position: 'top-center',
+    icon: 'success',
+    title: 'Mensaje enviado',
+    showConfirmButton: false,
+    timer: 5500
+  })}

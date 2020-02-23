@@ -1,6 +1,3 @@
-// $( function() {
-//     $( "#datepicker" ).datepicker();
-//   } );
 
 let d = new Date();
 let t = d.getTime();
@@ -52,36 +49,39 @@ document.getElementById("formPaciente").addEventListener("submit",(e)=>{
   let db = firebase.database().ref("obj/"+datareg);
   db.set(obj);
 }
-
-// function firebasePaciente(apPaciente,nomPaciente,edPaciente,dniPaciente,nacPaciente,genPaciente,dirPaciente,telFijoPaciente,telMovilPaciente,emailPaciente,ciudadPaciente,provinciaPaciente,cpPaciente) {
-//   firebase.database().ref('paciente/' + datareg).set({
-//     Apellido: apPaciente,
-//     Nombre: nomPaciente,
-//     Edad: edPaciente,
-//     Documento: dniPaciente,
-//     FechaNacimiento: nacPaciente,
-//     Genero: genPaciente,
-//     Dirección: dirPaciente,
-//     TelFijo: telFijoPaciente,
-//     TelMovil: telMovilPaciente,
-//     email: emailPaciente,
-//     ciudad: ciudadPaciente,
-//     Provincia: provinciaPaciente,
-//     CodPostal: cpPaciente,
-// });
-// }
 firebasePaciente()
-
-
-// createUsuarioPaciente(apPaciente,nomPaciente,edPaciente,dniPaciente,nacPaciente,genPaciente,dirPaciente,telFijoPaciente,telMovilPaciente,emailPaciente,ciudadPaciente,provinciaPaciente,cpPaciente){};
   formPaciente.reset();
-
 });
 
 // function createUsuarioPaciente (Apellido,Nombre,Edad,Documento,FechaNacimiento,Genero,Dirección,TelFijo,TelMovil,email,ciudad,Provincia,CodPostal){
-//  datareg+=1;
-//  const Paciente = {
+function provLocalidad (){
+  const provincias = ["Buenos Aires ",  "Ciudad Autónoma de Buenos Aires",  "Catamarca",  "Chaco",  "Chubut",  "Córdoba",  "Corrientes",  "Entre Ríos",  "Formosa",  "Jujuy",  "La Pampa",  "La Rioja",  "Mendoza",  "Misiones",  "Neuquén",
+  "Río Negro",  "Salta",  "Santa Cruz",  "Santa Fé",  "Santiago Del Estero",  "San Juan",  "San Luis",  "Tierra Del Fuego",
+  "Tucumán",]
+  let select = document.getElementById("selProvinciaTest");
 
-//  }
-//  console.log(Paciente)
-// }
+  for (let i=0; i<provincias.length; i++){
+    let option = document.createElement("option");
+    option.innerHTML = provincias[i];
+    select.appendChild(option);
+  }
+}
+provLocalidad() 
+
+function localidadProv (){
+  const localidad = [
+    tucuman = ["Burruyacu", "Capital", "Chicligasta", 
+  "Cruz Alta", "Famailla", "Graneros", "Juan B. Alberdi", 
+  "La Cocha", "Leales", "Lules", "Monteros", "Rio Chico", "Simoca", "Tafi del Valle", "Tafi Viejo", "Trancas", "Yerba Buena"],
+]
+  console.log(localidad)
+  
+  let select = document.getElementById("seleccionLocalidad");
+  for (let i=0; i<localidad.length ; i++){
+    let option = document.createElement("option");
+    option.innerHTML = localidad[i];
+    select.appendChild(option);
+    console.log(localidad[i])
+      }
+}
+localidadProv()

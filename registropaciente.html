@@ -16,7 +16,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>   
 <!-- Bootstrap.datepicker -->
 <script src="./src/js/bootstrap-datepicker.min.js"></script>
-<link rel="stylesheet" href="./src/css/bootstrap-datepicker.min.css">
 
 <!-- contenido -->
 <img src="./assets/img/LogoRolling.svg" class= "rounded mx-auto d-block m-4" alt="Logo RollingCode" height="91px">
@@ -70,27 +69,27 @@
               </div>
             <div class="form-group col-md-3">
                 <!-- <label for="telefonoCliente" >Teléfono</label> -->
-                <input placeholder="Teléfono Fijo" type="text" class="form-control" id="telefonoFijoCliente">
+                <input placeholder="Teléfono Fijo" type="number" class="form-control" id="telefonoFijoCliente">
             </div>
             <div class="form-group col-md-3">
               <!-- <label for="telefonoCliente" >Teléfono</label> -->
-              <input placeholder="Teléfono Movil" type="text" class="form-control" id="telefonoMovilCliente">
+              <input placeholder="Teléfono Movil" type="number" class="form-control" id="telefonoMovilCliente">
           </div>
             <div class="form-group col-md-3">
               <!-- <label for="emailPaciente">Correo Electrónico</label> -->
-              <input placeholder="Correo Electrónico"type="email" class="form-control" id="emailPaciente">
+              <input placeholder="Correo Electrónico" type="email" class="form-control" id="emailPaciente">
             </div>
         </div>
         <div class="form-row">
-          <div class="form-group col-md-6">
+          <!-- <div class="form-group col-md-3"> -->
             <!-- <label for="localidadPaciente">Localidad</label> -->
-            <input placeholder="Localidad "type="text" class="form-control" id="localidadPaciente">
-          </div>
-          <div class="form-group col-md-4">
+            <!-- <input placeholder="Localidad "type="text" class="form-control" id="localidadPaciente">
+          </div> -->
+          <div class="form-group col-md-3">
             <!-- <label for="inputState">Provincia</label> -->
-            <select placeholder="Provincia" id="seleccionProvincia" class="form-control">
+            <select placeholder="Localidad" id="seleccionLocalidad" class="form-control">
               <option >Seleccione</option>
-              <option value="Buenos Aries">Buenos Aries</option>
+              <!-- <option value="Buenos Aries">Buenos Aries</option>
               <option value="Catamarca">Catamarca</option>
               <option value="Chaco">Chaco</option>
               <option value="Chubut">Chubut</option>
@@ -112,13 +111,19 @@
               <option value="Santa Fe">Santa Fe</option>
               <option value="Santiago del Estero">Santiago del Estero</option>
               <option value="Tierra del Fuego">Tierra del Fuego</option>
-              <option value="Tucumán">Tucumán</option>
+              <option value="Tucumán">Tucumán</option> -->
             </select>
+
           </div>
-          <div class="form-group col-md-2">
+          <div class="form-group col-md-3">
             <!-- <label for="inputZip">Código Postal</label> -->
             <input placeholder="Código Postal" type="text" class="form-control" id="postalCliente">
           </div>
+        </div>
+        <div class="col-md-3">
+          <select placeholder="ProvinciaTest" id="selProvinciaTest" class="form-control">
+            <option >Seleccione</option>
+          </select>
         </div>
 <!-- Fin división 3 -->
         <div class="form-group d-flex flex-column align-items-center mt-3 mb-5">

@@ -1,0 +1,94 @@
+.divLogo{
+    display: flex;
+    justify-content: center;
+    background-color: #225378;
+}
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #225378;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  color: white;
+}
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+@media screen and (min-width: 320px) {
+    .logoClinica{
+      width: 150px;
+    }
+  }
+  @media screen and (max-width: 1440px) {
+    .logoClinica{
+      width: 300px;
+    }
+  }
+.Lista{
+  height: 100vh;
+  background-color: #1595A3;
+}
+.listabotones, .subboton{
+  margin-left: 3vw;
+  padding-top: 5vh;
+}
+.profesionales{
+  border-block-end:solid 1px;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+.pacientes{
+  border-block-end:solid 1px;
+  color:#ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+.panel{
+  border-block-end:solid 0.1px;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+.subboton{
+  color:#ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  margin-top: 5vh;
+}
+.Lista a:hover{
+color: #ffffff;
+text-decoration: none;
+}
+.contienesubb{
+  margin-left: 15px;
+}
+@media screen and (max-width: 320px) {
+  .textoProfesional{
+    font-size: 40px;
+    margin-top: 3vh;
+  }
+}
+

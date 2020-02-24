@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="./src/css/index.css">
+  <link rel="stylesheet" href="./src/css/login.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab:700&display=swap" rel="stylesheet">
   <title>Clínica RollingCode</title>
 </head>
+
 <body>
   <!-- Button trigger modal -->
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#indexModal">
@@ -45,27 +47,27 @@
         <div class="modal-body">
           <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-              <form class="d-flex justify-content-around">                          
-                  <select class="custom-select col-4">
-                    <option selected>Documento</option>
-                    <option value="1">DNI</option>
-                    <option value="2">CI</option>
-                    <option value="4">LE</option>
-                    <option value="5">LC</option>
-                    <option value="6">Pas</option>
-                  </select>
-                  <input type="number" class="form-control col-8" id="formGroupExampleInput" placeholder="Nro de Documento">                            
-                </form>
-                  <div class="mt-3">
-                    <label for="formGroupExampleInput2">Contraseña</label>
-                    <input type="password" class="form-control" id="formGroupExampleInput2"
-                      placeholder="Ingrese Contraseña">                    
-                  </div>
+              <form class="d-flex justify-content-around">
+                <select class="custom-select col-4">
+                  <option selected>Documento</option>
+                  <option value="1">DNI</option>
+                  <option value="2">CI</option>
+                  <option value="4">LE</option>
+                  <option value="5">LC</option>
+                  <option value="6">Pas</option>
+                </select>
+                <input type="number" class="form-control col-8" id="formGroupExampleInput"
+                  placeholder="Nro de Documento">
+              </form>
+              <div class="mt-3">
+                <label for="formGroupExampleInput2">Contraseña</label>
+                <input type="password" class="form-control" id="formGroupExampleInput2"
+                  placeholder="Ingrese Contraseña">
+              </div>
             </div>
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
               <form>
                 <div class="form-group">
-                  <label for="formGroupExampleInput">Nro de CUIT</label>
                   <div class="dropdown open d-flex">
                     <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Nro de Cuit">
                   </div>
@@ -73,24 +75,25 @@
                 <div class="form-group mt-3">
                   <label for="formGroupExampleInput2">Contraseña</label>
                   <input type="password" class="form-control" id="formGroupExampleInput2"
-                    placeholder="Ingrese Contraseña">                    
+                    placeholder="Ingrese Contraseña">
                 </div>
-              </div>
-              <div class="d-flex justify-content-between mt-3">
-              <button type="submit" class="btn text-white mb-3 d-flex justify-content-center">Ingresar</button>
-              <button type="submit" class="btn text-white mb-3 d-flex justify-content-center btnregister" href="http://">Registrarme</button>            
-            </div> 
-              </form>
             </div>
-        <div class="card-footer text-muted d-flex flex-column align-items-center ">
-          <div class="mt-3">
-            <img class="flecha" src="./assets/right-chevron.svg" alt="flecha">
-            <a id="btnrecover" onclick="hideModalRecover()">Olvidé mi contraseña</a>
-          </div>        
-          <div>
-            <img class="flecha" src="./assets/right-chevron.svg" alt="flecha">
-            <!-- buttom politica de privacidad -->
-            <a data-toggle="modal" href="#ppmodal" onclick="show">Politica de Privacidad</a>
+            <div class="d-flex justify-content-between mt-3">
+              <button type="submit" class="btn text-white mb-3 d-flex justify-content-center">Ingresar</button>
+              <button type="submit" class="btn text-white mb-3 d-flex justify-content-center btnregister"
+                href="http://">Registrarme</button>
+            </div>
+            </form>
+          </div>
+          <div class="card-footer text-muted d-flex flex-column align-items-center ">
+            <div class="mt-3">
+              <img class="flecha" src="./assets/right-chevron.svg" alt="flecha">
+              <a id="btnrecover" onclick="hideModalRecover()">Olvidé mi contraseña</a>
+            </div>
+            <div>
+              <img class="flecha" src="./assets/right-chevron.svg" alt="flecha">
+              <!-- buttom politica de privacidad -->
+              <a data-toggle="modal" href="#ppmodal" onclick="show">Politica de Privacidad</a>
             </div>
             <!-- Modal politica de privacidad -->
             <div class="modal fade" id="ppmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -157,34 +160,35 @@
           <div class="card-body">
             <p>Ingrese su correo electronico para recibir en su bandeja de entrada los pasos a seguir para
               restablecer su contraseña.</p>
-              <form>
-                <div class="form-group row">
-                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                  <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputEmail3" placeholder="mail@mail.com">
-                  </div>
+            <form>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="mail@mail.com">
                 </div>
-                <div class="form-group row">
-                  <div class="col-sm-10 offset-sm-2">
-                    <button type="submit" class="btn btn-primary" onclick="recoverPass()">Recuperar</button>
-                  </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-10 offset-sm-2">
+                  <button type="submit" class="btn btn-primary" onclick="recoverPass()">Recuperar</button>
                 </div>
-              </form>              
-          </div>         
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-  <script src="./src/js/index.js"></script>
+  <script src="./src/js/login.js"></script>
 </body>
+
 </html>

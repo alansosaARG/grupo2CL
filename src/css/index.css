@@ -48,7 +48,6 @@ body {
   }
 .Lista{
   height: 100vh;
-  background-color: #1595A3;
 }
 .listabotones, .subboton{
   margin-left: 3vw;
@@ -85,10 +84,30 @@ text-decoration: none;
 .contienesubb{
   margin-left: 15px;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .textoProfesional{
     font-size: 40px;
     margin-top: 3vh;
+    text-align: center;
   }
+  .btn .btn-primary{
+    align-self: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .tabla{
+    overflow-x: auto;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .tabla{
+    width: 100% !important;
+  }
+}
+.table{
+  margin-top: 2rem !important;
+}
+.barramenu{
+  background-color:#1595A3;
 }
 

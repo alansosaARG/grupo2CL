@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 .divLogo{
     display: flex;
     justify-content: center;
@@ -90,14 +93,12 @@ text-decoration: none;
     margin-top: 3vh;
     text-align: center;
   }
-  .btn .btn-primary{
+  .btn{
     align-self: center;
   }
 }
-@media screen and (max-width: 768px) {
-  .tabla{
-    overflow-x: auto;
-  }
+.tabla{
+  overflow-x: auto;
 }
 @media screen and (max-width: 1440px) {
   .tabla{
@@ -105,9 +106,34 @@ text-decoration: none;
   }
 }
 .table{
-  margin-top: 2rem !important;
+  margin-top: 2rem;
 }
 .barramenu{
   background-color:#1595A3;
 }
+.tabla th{
+  max-width: 100px;
+}
+.btn-primary{
+  background-color: #1595A3 !important;
+}
+.pelotas{
+  margin-left: 30px;
+}
+.horario{
+  background-color: #e9ecef !important;
+  border: none !important;
+}
+@media screen and (min-width: 768px) {
+  .tabla th{
+    max-width: 45px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .barramenu{
+    max-width: 270px;
+  }
+}
+
+
 

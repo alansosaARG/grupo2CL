@@ -60,7 +60,7 @@ body {
   border-block-end:solid 1px;
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
+  font-size: 30px;
 }
 .pacientes{
   border-block-end:solid 1px;
@@ -78,7 +78,6 @@ body {
   color:#ffffff;
   font-family: 'Montserrat', sans-serif;
   font-size: 17px;
-  margin-top: 5vh;
 }
 .Lista a:hover{
 color: #ffffff;
@@ -128,12 +127,17 @@ text-decoration: none;
   .tabla th{
     max-width: 45px;
   }
+  .tablaDoctores th{
+    max-width: 40px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .barramenu{
     max-width: 270px;
   }
 }
-
-
-
+.Usuarios{
+  background-color:#e9ecef !important;
+  border: none !important;
+  color: black !important;
+}

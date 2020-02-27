@@ -8,6 +8,7 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <title>Hello, world!</title>
   <link rel="stylesheet" href="src/css/admin.css" />
+  <link rel="stylesheet" href="src/css/animate.css">
   <script src="https://kit.fontawesome.com/8103fe7802.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
 </head>
@@ -23,7 +24,7 @@
               <i class="fas fa-bars d-lg-none text-white"></i>
             </a>
             <a class="navbar-brand" href="#">
-              <img class="LogoRolling" src="img/LogoRolling white.svg" width="250" height=""
+              <img class="LogoRolling animated pulse" src="img/LogoRolling white.svg" width="250" height=""
                 class="d-inline-block align-top" alt=""></a>
           </nav>
           <ul class="navbar-nav Lista collapse d-lg-block" id="collapseExample">
@@ -31,10 +32,10 @@
               <a class="profesionales" href="#profesionales" role="button" aria-haspopup="true" aria-expanded="false">
                 Profesionales</a>
             </li>
-            <li class="contienesubb">
+            <li class="contienesubb mt-3">
               <a class="subboton" href="#">Incidencias</a>
             </li>
-            <li class="contienesubb">
+            <li class="contienesubb my-3">
               <a class="subboton" href="#">Autorizaciones</a>
             </li>
             <li class="contienesubb">
@@ -43,37 +44,36 @@
             <li class="listabotones">
               <a class="pacientes" href="#pacientes" role="button" aria-haspopup="true" aria-expanded="false">Pacientes</a>
             </li>
-            <li class="contienesubb">
+            <li class="contienesubb mt-3">
               <a class="subboton" href="">Incidencias</a>
             </li>
-            <li class="contienesubb">
+            <li class="contienesubb mt-3">
               <a class="subboton" href="">Datos</a>
             </li>
             <li class="listabotones">
-              <a class="panel" href="#" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
+              <a class="panel" href="#panel" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
                 Panel de gestión
               </a>
             </li>
-            <li class="contienesubb">
+            <li class="contienesubb mt-3">
               <a class="subboton" href="">Datos</a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="textoconbtn col-12 col-lg-9 pr-0 pl-0 pl-md-5 text-center text-md-left">
+      <div class="textoconbtn col-12 col-lg-9 pr-0 pl-0 pl-md-5 text-center text-md-left mt-4">
         <h1 class="textoProfesional" id="profesionales">Profesionales</h1>
         <div class="btn-inc-aut mx-sm-3 mt-4 ">
-          <button type="button" class="btn btn-primary mx-2 mx-sm-3 mx-md-2 mx-lg-5 col-md-4 col-10 mt-2 pl-5 pl-md-1">
+          <button type="button" class="btn btn-primary mx-2 mx-sm-3 mx-md-2 mx-lg-5 col-md-4 col-10 mt-2 pl-5 pl-md-1 my-4">
             Incidencias 
-            <span class="pelotas badge badge-pill badge-success">0</span>
-            
+            <span class="pelotas animated heartBeat badge badge-pill badge-success">0</span>
           </button>
           <a type="button" class="btn btn-primary mx-2 mx-sm-3 mx-md-2 mx-lg-5 col-md-4 col-10 mt-2 " href="#autorizaciones">
             Autorizaciones
           </a>
         </div>
         <div class="tabla">
-          <table class="table w-100 pl-0 mt-4">
+          <table class="table w-100 pl-0 mt-5">
             <thead class="thead-dark">
               <tr>
                 <th class="horario" scope="col"></th>
@@ -88,211 +88,232 @@
             <tbody>
               <tr class="thead-light">
                 <th scope="row">8:00  12:00</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
               </tr>
               <tr class="thead-light">
                 <th scope="row">10:00  14:00</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
               </tr>
               <tr class="thead-light">
                 <th scope="row">12:00  16:00</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
               </tr>
               <tr class="thead-light">
                 <th scope="row">14:00 18:00</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
               </tr>
               <tr class="thead-light">
                 <th scope="row">16:00 20:00 </th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
               </tr>
               <tr class="thead-light">
                 <th scope="row">18:00  22:00</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
               </tr>
             </tbody>
           </table>
         </div>
         <div class="sector-pacientes">
           <h1 class="textoProfesional mt-5" id="pacientes">Pacientes</h1>
-          <button type="button" class="btn btn-primary mx-2 mx-sm-3 mx-md-2 mx-lg-5 mt-4">
+          <button type="button" class="btn btn-primary mx-2 mx-sm-3 mx-md-2 mx-lg-5 mt-4 w-25 my-5">
             Incidencias
             <span class="pelotas badge badge-pill badge-success">0</span>
           </button>
         </div>
-        <div class="tabla">
+        <div class="tablapacientes">
           <table class="table w-100 mt-4">
             <thead class="thead-dark">
               <tr>
-                <th class="horario" scope="col"></th>
-                <th scope="col">Lunes</th>
-                <th scope="col">Martes</th>
-                <th scope="col">Miercoles</th>
-                <th scope="col">Jueves</th>
-                <th scope="col">Viernes</th>
-                <th scope="col">Sabado</th>
+                <th scope="col">Paciente</th>
+                <th scope="col">Datos</th>
+                <th scope="col">Doctor</th>
+                <th scope="col">Edad</th>
+                <th scope="col">DNI</th>
+                <th scope="col">Turno</th>
+                <th scope="col">Admin</th>
               </tr>
             </thead>
             <tbody>
               <tr class="thead-light">
-                <th scope="row">8:00 12:00</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <th scope="row">Ruiz, Pedro</th>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
               </tr>
               <tr class="thead-light">
-                <th scope="row">10:00 14:00</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <th scope="row">Arias, Luis</th>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
               </tr>
               <tr class="thead-light">
-                <th scope="row">12:00  16:00</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <th scope="row">Fuentes, Ana</th>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
               </tr>
               <tr class="thead-light">
-                <th scope="row">14:00  18:00</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <th scope="row">Sosa, Franco</th>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
               </tr>
               <tr class="thead-light">
-                <th scope="row">16:00  20:00 </th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <th scope="row">Sanchez, Jose</th>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
               </tr>
               <tr class="thead-light">
-                <th scope="row">18:00  22:00</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <th scope="row">Gomez, Paula</th>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
               </tr>
             </tbody>
           </table>
         </div>
         <div>
-          <h1 class="textoProfesional">Panel de Control</h1>
-            <h2 class="textoProfesional">Datos</h2>
+          <h1 class="textoProfesional mt-5">Panel de Control</h1>
+            <h2 id="panel" class="textoProfesional my-5">Datos Doctores</h2>
         </div>
-        <div class="tabla">
+        <div class="tablaDoctores">
           <table class="table w-100 mt-4" id="autorizaciones">
             <thead class="thead-dark">
               <tr>
-                <th class="horario" scope="col"></th>
-                <th scope="col">Lunes</th>
-                <th scope="col">Martes</th>
-                <th scope="col">Miercoles</th>
-                <th scope="col">Jueves</th>
-                <th scope="col">Viernes</th>
-                <th scope="col">Sabado</th>
+                <th class="Usuarios" scope="col">Usuarios</th>
+                <th scope="col">Doctor</th>
+                <th scope="col">Especialidad</th>
+                <th scope="col">Consulta</th>
+         
+                <th scope="col">Admin</th>
+              
               </tr>
             </thead>
             <tbody>
               <tr class="thead-light">
-                <th scope="row">8:00  12:00</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <th class="numeroUsuario ml-5" scope="row">1</th>
+                <td>Dr. Lopez</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
               </tr>
               <tr class="thead-light">
-                <th scope="row">10:00 14:00</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <th class="numeroUsuario ml-5" scope="row">2</th>
+                <td>Dra. Ruiz</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
               </tr>
               <tr class="thead-light">
-                <th scope="row">12:00 16:00</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <th class="numeroUsuario ml-5" scope="row">3</th>
+                <td>Dr. JJ</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
               </tr>
               <tr class="thead-light">
-                <th scope="row">14:00 18:00</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <th class="numeroUsuario ml-5" scope="row">4</th>
+                <td>Dra. Baiad</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+            <h2 class="textoProfesional my-5">Datos Pacientes</h2>
+        </div>
+        <div class="tablaDoctores">
+          <table class="table w-100 mt-4">
+            <thead class="thead-dark">
+              <tr>
+                <th class="Usuarios" scope="col">Usuarios</th>
+                <th scope="col">Doctor</th>
+                <th scope="col">Especialidad</th>
+                <th scope="col">Consulta</th>
+                <th scope="col">Admin</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="thead-light">
+                <th class="numeroUsuario ml-5" scope="row">1</th>
+                <td>Dr. Lopez</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
               </tr>
               <tr class="thead-light">
-                <th scope="row">16:00 20:00 </th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <th class="numeroUsuario ml-5" scope="row">2</th>
+                <td>Dra. Ruiz</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
               </tr>
               <tr class="thead-light">
-                <th scope="row">18:00 22:00</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <th class="numeroUsuario ml-5" scope="row">3</th>
+                <td>Dr. JJ</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
               </tr>
+              <tr class="thead-light">
+                <th class="numeroUsuario ml-5" scope="row">4</th>
+                <td>Dra. Baiad</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+                <td>DOCTOR</td>
+              </tr>
+              
             </tbody>
           </table>
         </div>
